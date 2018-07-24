@@ -2,7 +2,7 @@
 Forest Forager Game
 
 ![GitHub Logo](assets/images/screenshot.png)
-Format: ![Alt Text](Whooohoo)
+
 
 Welcome to Forest Forager!
 
