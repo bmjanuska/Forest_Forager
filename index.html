@@ -1,0 +1,115 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Forest Forager</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+	crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<!-- Container --> 
+	<div class="container text-center">
+		
+		<!-- The Gamebox --> 
+		<div class="jumbotron">
+			<img src="assets/images/logo-01.png" class="img-fluid">
+
+		</div>
+
+		<!-- Instructions --> 
+		<!-- Button to start Instructions Modal -->
+		<button type="button" class="btn btn-lg btn-supreme" data-toggle="modal" data-target="#exampleModal">
+			Instructions
+		</button>
+
+		<!-- Instructions Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">How to Play</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p> Welcome to Forest Forager! </p>
+						<p>Each cute icon represents a random hidden number. <br/><br/>
+							Click the different icons to add to match the number at the top. <br/><br/>
+							Match the number with the top number and win a point! <br/><br/>
+							The game will reset if you win or lose and then the icons will have new numbers assigned to them. <br/><br/>
+							Good luck!!! <i class="fas fa-smile-beam"></i>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="numberrow">
+		<!-- Numbers --> 
+		<div class ="row">
+			<div class="col-6">
+				<!-- The Random Computer Number --> 
+				<div class="col-12"><h5>Match This</h5></div>
+				<div class ="guess_this_number"></div>
+			</div>
+
+			<div class="col-6">
+				<!-- User number --> 
+				<div class="col-12"><h5>Your Number</h5></div>
+				<div class ="userTotal"></div>
+			</div>
+
+		</div>
+
+		<!-- Crystals --> 
+		<div class ="row">
+			<div class ="col-3 cimg crystal_1"><img src="assets/images/forest-01.svg"></div>
+			<div class ="col-3 cimg crystal_2"><img src="assets/images/forest-02.svg"></div>
+			<div class ="col-3 cimg crystal_3"><img src="assets/images/forest-03.svg"></div>
+			<div class ="col-3 cimg crystal_4"><img src="assets/images/forest-04.svg"></div>
+		</div>
+
+		<!-- Score --> 
+		<div class ="row">
+			<div class="col-12">
+				<hr>
+				<div id="wlMessage"></div>
+				<div class="row">
+					<div class="col-6">
+						<div><h5>Wins:</h5></div>
+						<div id ="wins"></div>
+					</div>
+					<div class="col-6">
+						<div><h5>Losses:</h5></div>
+						<div id ="losses"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<script src="assets/javascript/game.js"></script>
+</body>
+
+

@@ -1,0 +1,59 @@
+.guess_this_number, .userTotal{
+	color:#333;
+	font-size: 55px;
+}
+
+
+
+.btn-supreme {
+	font-size: 25px;
+	color: #fff;
+    background-color:#CD3727;
+    border-width: 0px;
+    border-style: none;
+    margin: 15px 0;
+     -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.row {
+	margin: .5em;
+}
+
+body{
+	font-family: 'Gaegu', cursive;
+}
+
+
+
+.jumbotron{
+	margin-bottom: 0px;
+	background:transparent;
+ 	background-size: cover;
+ 	padding: 0px;
+}
+
+
+.container {
+	background-color: #8DAD3F;
+	padding: 1em;
+	border-radius: 5px;
+}
+
+.numberrow{
+	padding: .5em;
+	background-color: #F9EDDE;
+	border-radius: 5px;
+}
+
+h5{
+	font-size: 18px;
+}
+
+#losses{
+	font-size: 18px;
+}
+
+#wins{
+	font-size: 18px;
+}
